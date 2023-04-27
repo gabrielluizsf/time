@@ -8,6 +8,8 @@ import (
 // This function shows the current time in an infinite loop
 func Nunc(){
   for{
-  fmt.Println(time.Now())
+    now := time.Now()
+    fmt.Println(now.Format("Monday, Jan 02, 2006 3:04:05 PM"))
+    time.Sleep(1 * time.Second)
   } 
 }
